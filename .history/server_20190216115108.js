@@ -1,13 +1,13 @@
 const express =  require('express')
 const path =require('path');
 const fs = require('fs');
-const Index = require('./controller/index');
+const index = require('./controller/index');
 
 class Example {
     constructor() {
         this.app = express();
         this.port = 8080;
-        this.index = new Index();
+        this.index = new index();
     }
 
 initialize(){
